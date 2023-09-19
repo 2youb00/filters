@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    
+}
+.all{
+    width: 80vw;
+    
+    background-color: #222;
+    display: flex;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+.dadimg{
+    width: 65%;
+    height: 100%;
+    
+}
+.dadfilter{
+    width: 35%;
+    height: 100%;
+    
+}
+.dadimg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    color: white;
+}
+#img,.canvas{
+    max-width: 45vw;
+    max-height: 60vh;
+
+}
+.dadupload label{
+    padding: 8px 20px;
+    cursor: pointer;
+    border:2px white dashed ;
+}
+.dadimg .dadupload input{
+    display: none;
+}
+.dadfilter ul , .dadfilter li{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.dadfilter ul li label{
+    color: white;
+    text-align: center;
+    
+}
+
+.dadfilter ul li:last-child{
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.dadfilter ul li span,a{
+    padding: 10px 20px;
+    color: white;
+    background-color: #060;
+    cursor: pointer;
+    transition:  all 0.2s;
+}
+.dadfilter ul li span:hover,a:hover{
+    transform: scale(1.1);
+}
+.dadfilter ul li label::first-letter{
+    text-transform: uppercase;
+}
+input{
+    cursor: pointer;
+    transition: all 0.3s;
+}
+li input:hover{
+    transform: scale(1.03);
+    
+    
+}
+@media screen and (max-width:650px){
+    .all{
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+    #img,.canvas{
+        max-width: 80vw;
+    }
+   
+}
